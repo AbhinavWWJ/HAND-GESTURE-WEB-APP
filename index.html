@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Hand Gesture App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-success heading">Hand Gesture App</h3>
+      <br><br>
+
+
+      <p style="font-size: 20px;" id="p1">Take a selfie of gesture to know about its meaning</p>
+      <h1 id="h1">On following gesture the model is trained</h1>
+      <br><br>
+      	<h1>&#128076;|
+              &#128077;|
+              &#128078;|
+              
+        </h1>
+      
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam view - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button class="btn btn-danger" onclick="take_snapshot()">Capture Image</button>
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+      <label>PREDICTION1 - </label>
+      <p class="emotion_name" id="result_name"></p>
+      <p class="emoji" id="emoji_name"></p>
+
+     
+        <label>PREDICTION2 - </label>
+        <p class="emotion_name" id="result_name2"></p>
+        <p class="emoji" id="emoji_name"></p>
+
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button class="btn btn-danger" onclick="check()">Predict Emotion</button>
+      </div>
+
+      
+
+    </center>
+
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>

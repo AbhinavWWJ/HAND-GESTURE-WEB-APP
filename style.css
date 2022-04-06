@@ -1,0 +1,57 @@
+body
+{
+  color: rgba(184, 223, 10, 0.863);
+  background: #5748dd71;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_name1 ,#result_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+.heading{
+
+font-size: 18px;
+border-radius: 10px;
+letter-spacing: 10px;
+
+}
+
+label{
+
+  font-size: 17px;
+  color: rgb(17, 115, 206);
+  padding: 3px;
+  border-radius: 7px;
+  background-color: white;
+  
+
+}
+#p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: crimson;
+    font-weight: bolder;
+}
+#h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    color: indigo;
+    font-weight: bold;
+}
